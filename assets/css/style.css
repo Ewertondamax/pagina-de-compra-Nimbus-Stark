@@ -1,0 +1,68 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  grid-auto-rows: 200px;
+  place-items: start;
+
+}
+
+
+.foto {
+  grid-column: 1 / -1;
+}
+
+.descricao {
+  grid-column: 1 / 3;
+}
+
+.comprar {
+  grid-column: 1 / 3;
+}
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+}
+
+
+/*estilus gerais*/
+body {
+  font-family: Arial;
+  margin: 40px;
+}
+
+h1 p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+p span {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.comprar {
+  background: royalblue;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.preco {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
